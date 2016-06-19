@@ -2,8 +2,8 @@ local assets =
 {
     Asset("ANIM", "anim/boomerang.zip"),
 
-    Asset( "IMAGE", "images/inventoryimages/junkerang.tex" ),
-	Asset( "ATLAS", "images/inventoryimages/junkerang.xml" ),
+    Asset( "IMAGE", "images/inventoryimages/glowoil.tex" ),
+	Asset( "ATLAS", "images/inventoryimages/glowoil.xml" ),
 }
 
 
@@ -44,8 +44,8 @@ local function fn()
     MakeHauntableLaunchAndIgnite(inst)
 
     inst:AddComponent("inventoryitem")
-    inst.components.inventoryitem.imagename = "junkerang"
-    inst.components.inventoryitem.atlasname = "images/inventoryimages/junkerang.xml"
+    inst.components.inventoryitem.imagename = "glowoil"
+    inst.components.inventoryitem.atlasname = "images/inventoryimages/glowoil.xml"
 
     inst:AddComponent("edible")
     inst.components.edible.healthvalue = TUNING.HEALING_MED * -1
