@@ -1,6 +1,6 @@
 local assets =
 {
-    Asset("ANIM", "anim/boomerang.zip"),
+    Asset("ANIM", "anim/glowoil.zip"),
 
     Asset( "IMAGE", "images/inventoryimages/glowoil.tex" ),
 	Asset( "ATLAS", "images/inventoryimages/glowoil.xml" ),
@@ -16,8 +16,8 @@ local function fn()
 
     MakeInventoryPhysics(inst)
 
-    inst.AnimState:SetBank("boomerang")
-    inst.AnimState:SetBuild("boomerang")
+    inst.AnimState:SetBank("glowoil")
+    inst.AnimState:SetBuild("glowoil")
     inst.AnimState:PlayAnimation("idle")
 
     inst:AddTag("glowoil")
